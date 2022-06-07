@@ -1,3 +1,8 @@
+// object
+export { ObjectClean } from "./object/clean";
+export { objKeys } from "./object/keys";
+export { objOwnProperty } from "./object/own-property";
+
 // response
 export { responsePaginate } from "./response/paginate";
 export { responseError } from "./response/error";
