@@ -11,3 +11,9 @@ export { isNumber } from "./type/is-number";
 export { isObject } from "./type/is-object";
 export { isString } from "./type/is-string";
 export { isType, typeOf } from "./type/is-type";
+
+// value
+export { isEmpty } from "./value/is-empty";
+export { isNil } from "./value/is-nil";
+export { isNull } from "./value/is-null";
+export { isUndefined } from "./value/is-undefined";
