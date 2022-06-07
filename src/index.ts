@@ -1,6 +1,6 @@
 // response
-export { responsePaginate } from "./response/paginate/index.js";
-export { responseError } from "./response/error/index.js";
+export { responsePaginate } from "./response/paginate";
+export { responseError } from "./response/error";
 
 // type
 export { isArray } from "./type/is-array";

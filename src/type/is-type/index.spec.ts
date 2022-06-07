@@ -1,4 +1,17 @@
-import { typeOf } from "./index.js";
+import { typeOf, isType } from "./index.js";
+
+describe("isType", () => {
+  it("object", () => {
+    expect(isType(null, "object")).toBe(true);
+    expect(isType({}, "object")).toBe(true);
+  });
+  it("string", () => {
+    expect(isType("", "string")).toBe(true);
+  });
+  it("array", () => {
+    expect(isType([], "array")).toBe(true);
+  });
+});
 
 describe("typeOf", () => {
   it("object", () => {

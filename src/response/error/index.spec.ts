@@ -1,4 +1,4 @@
-import { responseError } from "@src/index.js";
+import { responseError } from "./index.js";
 
 describe("response", function () {
   it("error without additional info", function () {

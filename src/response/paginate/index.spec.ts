@@ -1,4 +1,4 @@
-import { responsePaginate } from "@src/index.js";
+import { responsePaginate } from "./index.js";
 
 describe("response", function () {
   it("paginate", function () {

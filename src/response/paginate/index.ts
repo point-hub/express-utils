@@ -6,7 +6,7 @@ interface ResponseInterface {
   totalPage: number;
 }
 
-export function responsePaginate(data: Array<object>, page: number, totalPerPage: number, totalDocument: number) {
+export const responsePaginate = (data: Array<object>, page: number, totalPerPage: number, totalDocument: number) => {
   const response: ResponseInterface = {
     data: data,
     page: page,
@@ -16,4 +16,4 @@ export function responsePaginate(data: Array<object>, page: number, totalPerPage
   };
 
   return response;
-}
+};
