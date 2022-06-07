@@ -2,6 +2,9 @@
 export { responsePaginate } from "./response/paginate";
 export { responseError } from "./response/error";
 
+// string
+export { trim } from "./string/trim";
+
 // type
 export { isArray } from "./type/is-array";
 export { isBoolean } from "./type/is-boolean";
