@@ -1,7 +1,7 @@
 export { fsSearch } from "./fs/search";
 export { fsCopy } from "./fs/copy";
 export { fsExists } from "./fs/exists";
-export { ObjectClean } from "./object/clean";
+export { objClean } from "./object/clean";
 export { objKeys } from "./object/keys";
 export { objOwnProperty } from "./object/own-property";
 export { responsePaginate } from "./response/paginate";

@@ -4,7 +4,7 @@ export { fsCopy } from "./fs/copy";
 export { fsExists } from "./fs/exists";
 
 // object
-export { ObjectClean } from "./object/clean";
+export { objClean } from "./object/clean";
 export { objKeys } from "./object/keys";
 export { objOwnProperty } from "./object/own-property";
 

@@ -1,6 +1,6 @@
 import { isNull, isObject, isEmpty } from "@src/index.js";
 
-interface OptionsInterface {
+interface IOptions {
   recursive?: boolean;
   undefined?: boolean;
   null?: boolean;
@@ -9,20 +9,24 @@ interface OptionsInterface {
   array?: boolean;
 }
 
-export class ObjectClean {
-  private isEmptyParent = false;
-  public recursive = true;
-  public undefined = true;
-  public null = true;
-  public string = true;
-  public object = true;
-  public array = true;
+export function objClean(obj: object, options?: IOptions): object {
+  return new ObjectClean(options).clean(obj);
+}
 
-  constructor(options?: OptionsInterface) {
+class ObjectClean {
+  private isEmptyParent = false;
+  private recursive = true;
+  private undefined = true;
+  private null = true;
+  private string = true;
+  private object = true;
+  private array = true;
+
+  constructor(options?: IOptions) {
     if (options) this.assignOptions(options);
   }
 
-  public clean(obj: object) {
+  public clean(obj: object): object {
     const newObj = { ...obj } as never;
     this.handle(newObj);
 
@@ -39,7 +43,7 @@ export class ObjectClean {
     return newObj;
   }
 
-  private assignOptions(options: OptionsInterface) {
+  private assignOptions(options: IOptions) {
     this.recursive = options.recursive ?? true;
     this.undefined = options.undefined ?? true;
     this.null = options.null ?? true;
