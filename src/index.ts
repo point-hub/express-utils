@@ -1,3 +1,8 @@
+// fs
+export { fsSearch } from "./fs/search";
+export { fsCopy } from "./fs/copy";
+export { fsExists } from "./fs/exists";
+
 // object
 export { ObjectClean } from "./object/clean";
 export { objKeys } from "./object/keys";

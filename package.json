@@ -1,6 +1,6 @@
 {
   "name": "@point-hub/express-utils",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Express utils",
   "type": "module",
   "main": "lib/index.js",
@@ -8,9 +8,12 @@
     "lib/"
   ],
   "scripts": {
+    "dev:compile": "tsc -w --project tsconfig.build.json",
+    "dev:resolve-path": "tsc-alias -w --project tsconfig.build.json",
+    "dev": "rimraf lib && concurrently -k npm:dev:*",
     "build:compile": "tsc --project tsconfig.build.json",
     "build:resolve-path": "tsc-alias --project tsconfig.build.json",
-    "build": "rimraf dist && npm run build:compile && npm run build:resolve-path",
+    "build": "rimraf lib && npm run build:compile && npm run build:resolve-path",
     "lint": "eslint ./src/**/*.ts",
     "lint:fix": "npm run lint -- --fix",
     "test": "NODE_OPTIONS=--experimental-vm-modules jest -i",
