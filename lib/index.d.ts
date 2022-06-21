@@ -1,6 +1,6 @@
-export { fsSearch } from "./fs/search";
-export { fsCopy } from "./fs/copy";
-export { fsExists } from "./fs/exists";
+export { fileSearch } from "./file/search";
+export { fileCopy } from "./file/copy";
+export { fileExists } from "./file/exists";
 export { objClean } from "./object/clean";
 export { objKeys } from "./object/keys";
 export { objOwnProperty } from "./object/own-property";

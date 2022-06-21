@@ -7,7 +7,7 @@ interface IPath {
   deep: number;
 }
 
-export async function fsSearch(name: string, dir: string, maxDeep = 0): Promise<IPath[]> {
+export async function fileSearch(name: string, dir: string, maxDeep = 0): Promise<IPath[]> {
   return await search(name, dir, maxDeep);
 }
 

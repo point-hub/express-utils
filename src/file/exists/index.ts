@@ -1,5 +1,5 @@
 import fs from "fs";
 
-export function fsExists(path: string) {
+export function fileExists(path: string) {
   return fs.existsSync(path);
 }

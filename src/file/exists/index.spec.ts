@@ -1,20 +1,20 @@
-import { fsExists } from "./index.js";
+import { fileExists } from "./index.js";
 
 describe("file system is exists", () => {
   it("return true if file exists", () => {
-    const result = fsExists("./src/fs/exists/index.ts");
+    const result = fileExists("./src/file/exists/index.ts");
     expect(result).toBeTruthy();
   });
   it("return false if file not exists", () => {
-    const result = fsExists("./src/fs/exists/index2.ts");
+    const result = fileExists("./src/file/exists/index2.ts");
     expect(result).toBeFalsy();
   });
   it("return true if directory exists", () => {
-    const result = fsExists("./src/fs/exists");
+    const result = fileExists("./src/file/exists");
     expect(result).toBeTruthy();
   });
   it("return false if directory not exists", () => {
-    const result = fsExists("./src/fs/exists2");
+    const result = fileExists("./src/file/exists2");
     expect(result).toBeFalsy();
   });
 });
