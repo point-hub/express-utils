@@ -14,6 +14,10 @@ export { responseError } from "./response/error/index.js";
 
 // string
 export { trim } from "./string/trim/index.js";
+export { capitalize } from "./string/capitalize/index.js";
+export { camelCase } from "./string/camel-case/index.js";
+export { pascalCase } from "./string/pascal-case/index.js";
+export { removeSpaces } from "./string/remove-spaces/index.js";
 
 // type
 export { isArray } from "./type/is-array/index.js";

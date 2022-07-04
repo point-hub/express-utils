@@ -1,6 +1,6 @@
 import { trim, trimStart, trimEnd, trimAll } from "./index.js";
 
-describe("string strim", () => {
+describe("string trim", () => {
   it("trim", () => {
     expect(trim("   Lorem   ipsum   ")).toBe("Lorem ipsum");
   });
