@@ -3,5 +3,9 @@ interface IPath {
     path: string;
     deep: number;
 }
-export declare function fileSearch(name: string, dir: string, maxDeep?: number): Promise<IPath[]>;
+interface IOptions {
+    maxDeep?: number;
+    regExp?: boolean;
+}
+export declare function fileSearch(name: string, dir: string, options?: IOptions): Promise<IPath[]>;
 export {};
