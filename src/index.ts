@@ -17,6 +17,8 @@ export { trim } from "./string/trim/index.js";
 export { capitalize } from "./string/capitalize/index.js";
 export { camelCase } from "./string/camel-case/index.js";
 export { pascalCase } from "./string/pascal-case/index.js";
+export { kebabCase } from "./string/kebab-case/index.js";
+export { snakeCase } from "./string/snake-case/index.js";
 export { removeSpaces } from "./string/remove-spaces/index.js";
 
 // type
