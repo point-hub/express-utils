@@ -31,16 +31,10 @@ async function search(name: string, dir: string, options: IOptions, array: Array
       const dirPath = path.join(dir, dirent.name);
       if (dirent.isDirectory() && options.maxDeep && options.maxDeep > deep) {
         return search(name, dirPath, options, array, dirent.name, deep + 1);
-      } else if (options.regExp && dirent.name.match(name)) {
+      } else if ((options.regExp && dirent.name.match(name)) || dirent.name === name) {
         array.push({
           key: key,
-          path: dirPath,
-          deep: deep,
-        });
-      } else if (dirent.name === name) {
-        array.push({
-          key: key,
-          path: dirPath,
+          path: transformPath(dirPath, deep),
           deep: deep,
         });
       }
@@ -48,4 +42,12 @@ async function search(name: string, dir: string, options: IOptions, array: Array
   );
 
   return array;
+}
+
+function transformPath(dirPath: string, deep: number) {
+  const length = dirPath.split("/").length;
+  return dirPath
+    .split("/")
+    .slice(length - deep - 1)
+    .join("/");
 }
