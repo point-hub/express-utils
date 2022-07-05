@@ -1,5 +1,4 @@
-export const pascalCase = (value: string): string => {
-  return value.replace(/\w+/g, function (w) {
-    return w[0].toUpperCase() + w.slice(1).toLowerCase();
-  });
-};
+import { camelCase } from "../camel-case/index.js";
+import { capitalize } from "../capitalize/index.js";
+
+export const pascalCase = (value: string): string => capitalize(camelCase(value));
