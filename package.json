@@ -1,6 +1,6 @@
 {
   "name": "@point-hub/express-utils",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "Express utils",
   "type": "module",
   "main": "lib/index.js",
