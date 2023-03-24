@@ -45,9 +45,14 @@ async function search(name: string, dir: string, options: IOptions, array: Array
 }
 
 function transformPath(dirPath: string, deep: number) {
+  // converts windows backslash paths to Unix paths
+  dirPath = dirPath.replace(/\\/g, "/");
+
   const length = dirPath.split("/").length;
-  return dirPath
+  dirPath = dirPath
     .split("/")
     .slice(length - deep - 1)
     .join("/");
+
+  return dirPath;
 }

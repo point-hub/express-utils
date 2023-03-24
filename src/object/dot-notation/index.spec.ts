@@ -23,8 +23,6 @@ describe("dot notation", () => {
 
     const result = dotNotation(obj);
 
-    console.log(result);
-
     expect(result).toStrictEqual({
       "friends.0.age": 20,
       "friends.0.name": "jane",

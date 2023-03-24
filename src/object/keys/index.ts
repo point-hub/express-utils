@@ -12,4 +12,4 @@ import { isNil } from "@src/index.js";
  * objKeys([])         //=> []
  */
 export const objKeys = <T = Record<string, unknown>>(value: T): string[] =>
-  !isNil(value) && typeof value === "object" ? Object.keys(value) : [];
+  !isNil(value) && typeof value === "object" ? Object.keys(value as object) : [];
