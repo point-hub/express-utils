@@ -1,1 +1,1 @@
-export declare const jsonStringify: (data: unknown) => unknown;
+export declare const jsonStringify: (data: object | string) => string;

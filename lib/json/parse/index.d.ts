@@ -1,1 +1,1 @@
-export declare const jsonParse: (data: unknown) => any;
+export declare const jsonParse: (data: string | object) => any;
