@@ -1,4 +1,4 @@
-export const jsonStringify = (data: unknown) => {
+export const jsonStringify = (data: object | string) => {
   if (typeof data === "object") {
     return JSON.stringify(data);
   }
