@@ -43,5 +43,5 @@ export { jsonStringify } from "./json/stringify/index.js";
 export { jsonParse } from "./json/parse/index.js";
 
 // render
-export { renderHandlebars } from "./render/handlebars/index.js";
+export { default as Handlebars } from "./render/handlebars/index.js";
 export { renderInlineCss } from "./render/inlinecss/index.js";

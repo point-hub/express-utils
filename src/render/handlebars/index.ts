@@ -1,7 +1,21 @@
-import ExpressHandlebars from "express-handlebars";
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import Handlebars from "handlebars";
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export const renderHandlebars = async (path: string, context: Record<string, any>) => {
-  const handlebars = ExpressHandlebars.create();
-  return await handlebars.render(path, context);
+export const render = (template: string, context: Record<string, any>) => {
+  const compiledTemplate = compile(template);
+  return compiledTemplate(context);
 };
+
+export const compile = (template: string) => {
+  return Handlebars.compile(template);
+};
+
+export const registerPartial = async (name: string, template: string) => {
+  Handlebars.registerPartial(name, template);
+};
+
+export const registerHelper = async (name: string, fn: (params: any) => any) => {
+  Handlebars.registerHelper(name, fn);
+};
+
+export default { render, compile, registerPartial, registerHelper };
