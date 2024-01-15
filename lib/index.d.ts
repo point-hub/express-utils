@@ -28,3 +28,5 @@ export { isNull } from "./value/is-null/index.js";
 export { isUndefined } from "./value/is-undefined/index.js";
 export { jsonStringify } from "./json/stringify/index.js";
 export { jsonParse } from "./json/parse/index.js";
+export { renderHandlebars } from "./render/handlebars/index.js";
+export { renderInlineCss } from "./render/inlinecss/index.js";
