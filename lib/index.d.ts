@@ -30,3 +30,5 @@ export { jsonStringify } from "./json/stringify/index.js";
 export { jsonParse } from "./json/parse/index.js";
 export { default as Handlebars, copyrightYear } from "./render/handlebars/index.js";
 export { renderInlineCss } from "./render/inlinecss/index.js";
+export { tokenGenerate } from "./token/generate/index.js";
+export { tokenSha256 } from "./token/sha256/index.js";

@@ -45,3 +45,7 @@ export { jsonParse } from "./json/parse/index.js";
 // render
 export { default as Handlebars, copyrightYear } from "./render/handlebars/index.js";
 export { renderInlineCss } from "./render/inlinecss/index.js";
+
+// token
+export { tokenGenerate } from "./token/generate/index.js";
+export { tokenSha256 } from "./token/sha256/index.js";
