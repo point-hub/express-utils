@@ -5,8 +5,6 @@ export { objClean } from "./object/clean/index.js";
 export { objKeys } from "./object/keys/index.js";
 export { objOwnProperty } from "./object/own-property/index.js";
 export { dotNotation } from "./object/dot-notation/index.js";
-export { responsePaginate } from "./response/paginate/index.js";
-export { responseError } from "./response/error/index.js";
 export { trim } from "./string/trim/index.js";
 export { capitalize } from "./string/capitalize/index.js";
 export { camelCase } from "./string/camel-case/index.js";

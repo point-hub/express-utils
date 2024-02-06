@@ -9,10 +9,6 @@ export { objKeys } from "./object/keys/index.js";
 export { objOwnProperty } from "./object/own-property/index.js";
 export { dotNotation } from "./object/dot-notation/index.js";
 
-// response
-export { responsePaginate } from "./response/paginate/index.js";
-export { responseError } from "./response/error/index.js";
-
 // string
 export { trim } from "./string/trim/index.js";
 export { capitalize } from "./string/capitalize/index.js";
