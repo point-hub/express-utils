@@ -12,6 +12,7 @@ export { pascalCase } from "./string/pascal-case/index.js";
 export { kebabCase } from "./string/kebab-case/index.js";
 export { snakeCase } from "./string/snake-case/index.js";
 export { removeSpaces } from "./string/remove-spaces/index.js";
+export { numberFormat } from "./number/format/index.js";
 export { isArray } from "./type/is-array/index.js";
 export { isBoolean } from "./type/is-boolean/index.js";
 export { isDate } from "./type/is-date/index.js";

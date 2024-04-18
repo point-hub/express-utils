@@ -18,6 +18,9 @@ export { kebabCase } from "./string/kebab-case/index.js";
 export { snakeCase } from "./string/snake-case/index.js";
 export { removeSpaces } from "./string/remove-spaces/index.js";
 
+// number
+export { numberFormat } from "./number/format/index.js";
+
 // type
 export { isArray } from "./type/is-array/index.js";
 export { isBoolean } from "./type/is-boolean/index.js";
