@@ -20,6 +20,8 @@ export { removeSpaces } from "./string/remove-spaces/index.js";
 
 // number
 export { numberFormat } from "./number/format/index.js";
+export { hasDecimal } from "./number/has-decimal/index.js";
+export { getDecimal } from "./number/get-decimal/index.js";
 
 // type
 export { isArray } from "./type/is-array/index.js";
