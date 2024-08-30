@@ -12,6 +12,7 @@ export { dotNotation } from "./object/dot-notation/index.js";
 // string
 export { trim } from "./string/trim/index.js";
 export { capitalize } from "./string/capitalize/index.js";
+export { titleCase } from "./string/title-case/index.js";
 export { camelCase } from "./string/camel-case/index.js";
 export { pascalCase } from "./string/pascal-case/index.js";
 export { kebabCase } from "./string/kebab-case/index.js";
