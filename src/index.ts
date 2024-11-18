@@ -4,7 +4,7 @@ export { fileCopy } from "./file/copy/index.js";
 export { fileExists } from "./file/exists/index.js";
 
 // object
-export { objClean } from "./object/clean/index.js";
+export { objClean, type IObjClean, type IOptions as IObjCleanOptions } from "./object/clean/index.js";
 export { objKeys } from "./object/keys/index.js";
 export { objOwnProperty } from "./object/own-property/index.js";
 export { dotNotation } from "./object/dot-notation/index.js";
