@@ -1,5 +1,5 @@
 export interface IObjClean {
-    (obj: Record<string, unknown>, options?: IOptions): Record<string, unknown>;
+    (obj: object, options?: IOptions): object;
 }
 export interface IOptions {
     recursive?: boolean;
