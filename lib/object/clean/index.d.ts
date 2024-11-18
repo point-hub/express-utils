@@ -1,4 +1,7 @@
-interface IOptions {
+export interface IObjClean {
+    (obj: Record<string, unknown>, options?: IOptions): Record<string, unknown>;
+}
+export interface IOptions {
     recursive?: boolean;
     undefined?: boolean;
     null?: boolean;
@@ -6,5 +9,4 @@ interface IOptions {
     object?: boolean;
     array?: boolean;
 }
-export declare function objClean(obj: object, options?: IOptions): object;
-export {};
+export declare const objClean: IObjClean;

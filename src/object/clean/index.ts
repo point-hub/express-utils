@@ -1,6 +1,10 @@
 import { isNull, isObject, isEmpty } from "@src/index.js";
 
-interface IOptions {
+export interface IObjClean {
+  (obj: Record<string, unknown>, options?: IOptions): Record<string, unknown>;
+}
+
+export interface IOptions {
   recursive?: boolean;
   undefined?: boolean;
   null?: boolean;
@@ -9,9 +13,9 @@ interface IOptions {
   array?: boolean;
 }
 
-export function objClean(obj: object, options?: IOptions): object {
+export const objClean: IObjClean = (obj: Record<string, unknown>, options?: IOptions) => {
   return new ObjectClean(options).clean(obj);
-}
+};
 
 class ObjectClean {
   private isEmptyParent = false;
@@ -26,7 +30,7 @@ class ObjectClean {
     if (options) this.assignOptions(options);
   }
 
-  public clean(obj: object): object {
+  public clean(obj: Record<string, unknown>): Record<string, unknown> {
     const newObj = { ...obj } as never;
     this.handle(newObj);
 
