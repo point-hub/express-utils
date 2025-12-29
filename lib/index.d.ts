@@ -28,6 +28,7 @@ export { isEmpty } from "./value/is-empty/index.js";
 export { isNil } from "./value/is-nil/index.js";
 export { isNull } from "./value/is-null/index.js";
 export { isUndefined } from "./value/is-undefined/index.js";
+export { isValidDate } from "./value/is-valid-date/index.js";
 export { jsonStringify } from "./json/stringify/index.js";
 export { jsonParse } from "./json/parse/index.js";
 export { default as Handlebars, copyrightYear } from "./render/handlebars/index.js";

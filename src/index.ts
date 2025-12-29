@@ -39,6 +39,7 @@ export { isEmpty } from "./value/is-empty/index.js";
 export { isNil } from "./value/is-nil/index.js";
 export { isNull } from "./value/is-null/index.js";
 export { isUndefined } from "./value/is-undefined/index.js";
+export { isValidDate } from "./value/is-valid-date/index.js";
 
 // json
 export { jsonStringify } from "./json/stringify/index.js";
